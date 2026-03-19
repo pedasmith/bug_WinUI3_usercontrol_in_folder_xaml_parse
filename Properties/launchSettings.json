@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "bug_WinUI3_usercontrol_in_folder_xaml_parse (Package)": {
+      "commandName": "MsixPackage"
+    },
+    "bug_WinUI3_usercontrol_in_folder_xaml_parse (Unpackaged)": {
+      "commandName": "Project"
+    }
+  }
+}
