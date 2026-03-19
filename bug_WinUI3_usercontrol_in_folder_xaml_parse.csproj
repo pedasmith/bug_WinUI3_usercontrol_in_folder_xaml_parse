@@ -13,6 +13,9 @@
     <EnableMsixTooling>true</EnableMsixTooling>
     <Nullable>enable</Nullable>
   </PropertyGroup>
+  <ItemGroup>
+    <None Remove="control_at_top_level_works_fine.xaml" />
+  </ItemGroup>
 
   <ItemGroup>
     <Content Include="Assets\SplashScreen.scale-200.png" />
@@ -42,6 +45,11 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="folder_for_control\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Page Update="control_at_top_level_works_fine.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
   </ItemGroup>
 
   <!--
