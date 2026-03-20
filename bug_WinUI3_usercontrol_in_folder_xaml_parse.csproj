@@ -15,6 +15,7 @@
   </PropertyGroup>
   <ItemGroup>
     <None Remove="control_at_top_level_works_fine.xaml" />
+    <None Remove="folder_for_control\control_in_sub_folder_fails.xaml" />
   </ItemGroup>
 
   <ItemGroup>
@@ -44,7 +45,9 @@
     <PackageReference Include="Microsoft.WindowsAppSDK" Version="1.8.260317003" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="folder_for_control\" />
+    <Page Update="folder_for_control\control_in_sub_folder_fails.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
   </ItemGroup>
   <ItemGroup>
     <Page Update="control_at_top_level_works_fine.xaml">
